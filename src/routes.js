@@ -77,8 +77,8 @@ const Switches = Loadable({
   loading: Loading,
 });
 
-const Tables = Loadable({
-  loader: () => import('./views/Base/Tables'),
+const Product = Loadable({
+  loader: () => import('./views/Base/Product'),
   loading: Loading,
 });
 
@@ -182,20 +182,25 @@ const User = Loadable({
   loading: Loading,
 });
 
+const Product2 = Loadable({
+  loader: () => import('./views/Product/Index'),
+  loading: Loading,
+});
 
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
   { path: '/', exact: true, name: 'Home', component: DefaultLayout },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
-  { path: '/theme', exact: true, name: 'Theme', component: Colors },
+  { path: '/product2', name: 'Product2', component: Product2 },
+  { path: '/theme', exact: true, name: 'Theme', componenProduct2t: Colors },
   { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },
   { path: '/base', exact: true, name: 'Base', component: Cards },
   { path: '/base/cards', name: 'Cards', component: Cards },
   { path: '/base/forms', name: 'Forms', component: Forms },
   { path: '/base/switches', name: 'Switches', component: Switches },
-  { path: '/base/tables', name: 'Tables', component: Tables },
+  { path: '/base/product', name: 'Produtos', component: Product },
   { path: '/base/tabs', name: 'Tabs', component: Tabs },
   { path: '/base/breadcrumbs', name: 'Breadcrumbs', component: Breadcrumbs },
   { path: '/base/carousels', name: 'Carousel', component: Carousels },

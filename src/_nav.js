@@ -10,6 +10,15 @@ export default {
       },
     },
     {
+      name: 'Product2',
+      url: '/product2',
+      icon: 'icon-speedometer',
+      badge: {
+        variant: 'info',
+        text: 'NEW',
+      },
+    },
+    {
       title: true,
       name: 'Theme',
       wrapper: {            // optional wrapper object
@@ -107,8 +116,8 @@ export default {
           icon: 'icon-puzzle',
         },
         {
-          name: 'Tables',
-          url: '/base/tables',
+          name: 'Produtos',
+          url: '/base/product',
           icon: 'icon-puzzle',
         },
         {
