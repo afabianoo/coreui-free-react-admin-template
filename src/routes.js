@@ -157,31 +157,6 @@ const Modals = Loadable({
   loading: Loading,
 });
 
-const Colors = Loadable({
-  loader: () => import('./views/Theme/Colors'),
-  loading: Loading,
-});
-
-const Typography = Loadable({
-  loader: () => import('./views/Theme/Typography'),
-  loading: Loading,
-});
-
-const Widgets = Loadable({
-  loader: () => import('./views/Widgets/Widgets'),
-  loading: Loading,
-});
-
-const Users = Loadable({
-  loader: () => import('./views/Users/Users'),
-  loading: Loading,
-});
-
-const User = Loadable({
-  loader: () => import('./views/Users/User'),
-  loading: Loading,
-});
-
 const Product2 = Loadable({
   loader: () => import('./views/Product/Index'),
   loading: Loading,
@@ -193,9 +168,6 @@ const routes = [
   { path: '/', exact: true, name: 'Home', component: DefaultLayout },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
   { path: '/product2', name: 'Product2', component: Product2 },
-  { path: '/theme', exact: true, name: 'Theme', componenProduct2t: Colors },
-  { path: '/theme/colors', name: 'Colors', component: Colors },
-  { path: '/theme/typography', name: 'Typography', component: Typography },
   { path: '/base', exact: true, name: 'Base', component: Cards },
   { path: '/base/cards', name: 'Cards', component: Cards },
   { path: '/base/forms', name: 'Forms', component: Forms },
@@ -228,10 +200,7 @@ const routes = [
   { path: '/notifications/alerts', name: 'Alerts', component: Alerts },
   { path: '/notifications/badges', name: 'Badges', component: Badges },
   { path: '/notifications/modals', name: 'Modals', component: Modals },
-  { path: '/widgets', name: 'Widgets', component: Widgets },
   { path: '/charts', name: 'Charts', component: Charts },
-  { path: '/users', exact: true,  name: 'Users', component: Users },
-  { path: '/users/:id', exact: true, name: 'User Details', component: User },
 ];
 
 export default routes;
