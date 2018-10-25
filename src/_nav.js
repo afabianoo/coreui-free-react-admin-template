@@ -11,7 +11,7 @@ export default {
     },
     {
       name: 'Fluxo de caixa',
-      url: '/dashboard',
+      url: '/fluxoDeCaixa',
       icon: 'icon-speedometer',
       badge: {
         variant: 'info',

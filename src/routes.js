@@ -7,8 +7,8 @@ function Loading() {
   return <div>Loading...</div>;
 }
 
-const Dashboard = Loadable({
-  loader: () => import('./views/Dashboard'),
+const FluxoDeCaixa = Loadable({
+  loader: () => import('./views/FluxoDeCaixa/FluxoDeCaixa'),
   loading: Loading,
 });
 
@@ -19,9 +19,9 @@ const Product = Loadable({
 
 
 const routes = [
-  { path: '/', exact: true, name: 'Home', component: DefaultLayout },
+  { path: '/', exact: true, name: 'Início', component: DefaultLayout },
   { path: '/product', name: 'Produtos', component: Product },
-  { path: '/dashboard', name: 'Dashboard', component: Dashboard },
+  { path: '/fluxoDeCaixa', name: 'Fluxo de caixa', component: FluxoDeCaixa },
 ];
 
 export default routes;
